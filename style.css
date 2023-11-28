@@ -1,0 +1,197 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Epilogue", sans-serif;
+}
+
+body {
+  background: hsl(0, 7%, 94%);
+}
+
+.menu {
+  max-width: 1900px;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+[data-dropdown] {
+  position: relative;
+}
+
+.dropdown-menu {
+  background: white;
+  position: absolute;
+  top: 58px;
+  padding: 20px;
+  border-radius: 8px;
+  margin-left: -95px;
+  z-index: 200;
+}
+
+.dropdown-menu2 {
+  background: white;
+  position: absolute;
+  top: 58px;
+  padding: 16px;
+  width: 90px;
+  border-radius: 8px;
+  z-index: 200;
+}
+
+.dropdown-menu img {
+  margin-right: 8px;
+}
+
+[data-dropdown] .dropdown-menu {
+  display: none;
+}
+
+[data-dropdown].ativo .dropdown-menu {
+  display: block;
+  animation: show-up 0.3s forwards;
+}
+
+[data-dropdown] .dropdown-menu2 {
+  display: none;
+}
+
+[data-dropdown].ativo .dropdown-menu2 {
+  display: block;
+  animation: show-up 0.3s forwards;
+}
+
+.dropdown-menu2 {
+  position: absolute;
+  top: 38px;
+  z-index: 200;
+}
+
+.esquerd {
+  margin-right: 100px;
+}
+
+button {
+  font-family: "Epilogue", sans-serif;
+  background: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  width: 150px;
+  padding: 15px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+button.ativo {
+  color: black;
+  background: white;
+}
+
+.registro {
+  height: 22px;
+  border: 1px solid black;
+  border-radius: 13px;
+  text-align: center;
+}
+
+.registro:hover {
+  border: 2px solid black;
+  color: black;
+}
+
+.rigth {
+  display: inline;
+  justify-content: right;
+  padding-left: 100px;
+}
+
+.menu ul {
+  display: flex;
+  font-size: 13px;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.menu li a {
+  align-items: center;
+  color: hsl(0, 0%, 41%);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  display: block;
+  padding: 8px;
+  width: 120px;
+}
+
+h1 {
+  width: 520px;
+  font-size: 4.9rem;
+  font-weight: 700;
+}
+
+p {
+  color: hsl(0, 0%, 41%);
+  width: 380px;
+  line-height: 1.8;
+}
+
+.seta::after {
+  content: "⌄";
+  margin-left: 10px;
+}
+
+.seta2::after {
+  content: "⌄";
+  margin-left: 10px;
+}
+
+.seta.ativo::after {
+  content: "⌃";
+  margin-left: 10px;
+}
+
+.seta2.ativo::after {
+  content: "⌃";
+  margin-left: 10px;
+}
+
+.container {
+  display: grid;
+  max-width: 1900px;
+  justify-content: center;
+  gap: 100px;
+  grid-template-columns: 1fr 1fr;
+  margin: 100px auto;
+  width: 700px;
+  padding: 20px;
+}
+
+.list-img {
+  width: 500px;
+  padding-top: 120px;
+}
+
+.list-img img {
+  padding-right: 20px;
+}
+
+.flex {
+  display: flex;
+}
+
+.Snap {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-left: -180px;
+  padding-right: 50px;
+}
+
+.destaq {
+  width: 500px;
+  height: 600px;
+}
